@@ -17,9 +17,11 @@ PImage holdingflower;
 PImage secretgirl;
 PImage tiger;
 PImage youtubechannel;
+PImage babyme;
 
 void setup(){
  size(750,650);
+ imageMode(CENTER);
  fox = loadImage("Fox.png");
  girl = loadImage("girl.png");
  winter = loadImage("winter.png");
@@ -34,22 +36,37 @@ void setup(){
  secretgirl = loadImage ("secretgirl.png");
  tiger = loadImage("tiger.png");
  youtubechannel = loadImage("youtubechannel.png");
+ babyme = loadImage("babyme.png");
 }
 
 void draw(){
   background(#ff00ff);
-  image(fox,-2,9);
+  image(fox,94,149);
   image(girl,-44,200);
-  image(winter,509,-5);
-  image(kira,172,233);
-  image(ducky,67,203);
-  image(vulpix,545,-43);
-  image(before,452,382);
-  image(graduation,601,397);
-  image(flower,141,173);
-  image(middleschool,536,215);
-  image(holdingflower,282,449);
-  image(secretgirl,1,410);
-  image(tiger,127,460);
-  image(youtubechannel,277,325);
+  image(winter,614,119);
+  //image(kira,258,203);
+  image(ducky,75,347);
+  //image(vulpix,545,-43);
+  image(before,542,526);
+  image(graduation,698,540);
+  //image(flower,141,173);
+  image(middleschool,697,314);
+  image(holdingflower,406,560);
+  image(secretgirl,104,564);
+  //image(tiger,259,565);
+  image(youtubechannel,280,389);
+  image(babyme,275,171);
+  
+ rotateFromCenter(vulpix,625,165);
+ rotateFromCenter(kira,524,306);
+ rotateFromCenter(flower,176,113);
+ rotateFromCenter(tiger,248 + cos(frameCount * 0.5) * 2, 568);
+
+}
+void rotateFromCenter(PImage character,float x,float y){
+  translate(x,y);
+  rotate(frameCount * 0.01);
+  image(character,0,0);
+  resetMatrix();
+  
 }
