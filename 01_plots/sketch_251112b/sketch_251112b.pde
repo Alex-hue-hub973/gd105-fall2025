@@ -1,13 +1,16 @@
 import processing.svg.*;
+noFill();
 
 beginRecord(SVG,"myCoolplot.svg");
+
 ellipse(width/2,height/2,250,250);
-size(100,100);
+size(600,600);
 stroke(0,0,0);
 
-line(60,50,0,0);
-line(90,80,90,90);
-line(25,70,50,25);
-line(79,0,50,39);
-line(99,99,50,50);
+line(300,200,200,300);
+line(350,260,300,260);
+line(250,200,200,250);
+line(300,250,270,309);
+line(280,209,209,280);
+
 endRecord();
