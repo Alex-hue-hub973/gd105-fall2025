@@ -1,0 +1,17 @@
+size(600,600);
+beginShape();
+vertex(300,500);
+vertex(100,300);
+vertex(200,150);
+vertex(300,250);
+vertex(400,150);
+vertex(500,300);
+vertex(300,500);
+endShape();
+stroke(0,0,0);
+beginShape();
+vertex(300,200);
+vertex(200,300);
+vertex(300,400);
+vertex(400,300);
+endShape();
