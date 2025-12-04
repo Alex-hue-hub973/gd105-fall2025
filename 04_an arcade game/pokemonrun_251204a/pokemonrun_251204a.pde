@@ -1,6 +1,6 @@
 Espurr espurr;
+
 void setup(){
-  
   size(700,666);
   espurr = new Espurr();
 }
@@ -8,8 +8,12 @@ void setup(){
 
 void draw(){
   background(255);
-  espurr.display();
+  espurr.run();
 }
 void keyPressed(){
-  espurr.movement();
+  espurr.input(true);
+}
+
+void keyReleased(){
+  espurr.input(false);
 }
