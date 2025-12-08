@@ -1,19 +1,19 @@
 Espurr espurr;
 
-void setup(){
-  size(700,666);
+void setup() {
+  size(800, 800);
   espurr = new Espurr();
 }
 
 
-void draw(){
+void draw() {
   background(255);
   espurr.run();
 }
-void keyPressed(){
+void keyPressed() {
   espurr.input(true);
 }
 
-void keyReleased(){
+void keyReleased() {
   espurr.input(false);
 }

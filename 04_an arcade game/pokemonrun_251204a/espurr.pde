@@ -3,40 +3,39 @@ class Espurr {
   float speed = 6;
   boolean up, down, left, right;
   PImage esp;
-  
+
   Espurr() {
     esp = loadImage("espurr.png");
   }
-  
+
   void run()
   {
     display();
     movement();
-  }  
+  }
   void display() {
-//square(position.x, position.y, 100);
     image(esp, position.x, position.y);
   }
-  
+
   void movement()
   {
-    if(up){
+    if (up) {
       position.y -= speed;
     }
-    
-    if(left){
+
+    if (left) {
       position.x -= speed;
     }
-    
-    if(down){
+
+    if (down) {
       position.y += speed;
     }
-    
-    if(right){
+
+    if (right) {
       position.x += speed;
     }
   }
-  
+
 
   void input(boolean setBool) {
     if (key == 'w') {
