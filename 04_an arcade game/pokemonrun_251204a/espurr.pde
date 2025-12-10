@@ -19,6 +19,18 @@ class Espurr {
 
   void movement()
   {
+    if(position.x < 10){
+     position.x = 10; 
+    }
+    if(position.y < 10){
+     position.y = 10;  
+    }
+    if(position.x > 800){
+     position.x = 800; 
+    }
+    if(position.y > 600){
+     position.y = 600; 
+    }
     if (up) {
       position.y -= speed;
     }

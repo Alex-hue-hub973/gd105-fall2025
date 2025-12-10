@@ -1,7 +1,7 @@
 Espurr espurr;
-
+PImage Nora, Ziar
 void setup() {
-  size(800, 800);
+  size(800, 600);
   espurr = new Espurr();
 }
 
@@ -9,6 +9,8 @@ void setup() {
 void draw() {
   background(255);
   espurr.run();
+  imageMode(CENTER);
+  println(espurr.position.x);
 }
 void keyPressed() {
   espurr.input(true);
